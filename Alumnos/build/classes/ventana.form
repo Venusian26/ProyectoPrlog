@@ -398,7 +398,7 @@
     <Component class="javax.swing.JLabel" name="lblfondo">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\juanramon\Documents\ITTEPIC\Prolog\Unidad 4\Sin t&#xed;tu2w-2.jpg"/>
+          <Image iconType="3" name="/img/Sin t&#xed;tu2w-2.jpg"/>
         </Property>
       </Properties>
       <Constraints>

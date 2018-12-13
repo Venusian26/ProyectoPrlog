@@ -250,7 +250,7 @@ Validaciones validar = new Validaciones();
         jLabel1.setText("MAP, FILTER Y REDUCE");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
 
-        lblfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\juanramon\\Documents\\ITTEPIC\\Prolog\\Unidad 4\\Sin títu2w-2.jpg")); // NOI18N
+        lblfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Sin títu2w-2.jpg"))); // NOI18N
         getContentPane().add(lblfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 620));
 
         pack();
@@ -451,7 +451,7 @@ txtLog.setText(">Base de datos reestablecida");
    public void Reduce(Connection conexion)throws SQLException{
         
         ArrayList<String> Nombre = new ArrayList<String>();
-        List<String> nombres = null;
+    
         String nombre = "";
         try{
         PreparedStatement consulta = conexion.prepareStatement("SELECT nombre, Numero_Control FROM " + tabla );
@@ -460,11 +460,11 @@ txtLog.setText(">Base de datos reestablecida");
              
             Nombre.add(resultado.getString("nombre")); 
    
-                  Iterator<String> it = Nombre.iterator();
+                  /*Iterator<String> it = Nombre.iterator();
                           while(it.hasNext()){
                             nombre += it.next();
                           }
-                   txtReduce.setText(nombre+"\n");
+                   txtReduce.setText(nombre+"\n");*/
                   
                   
                  Optional<String> nombreLargo = Nombre.stream() 
